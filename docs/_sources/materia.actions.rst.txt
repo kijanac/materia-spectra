@@ -1,0 +1,20 @@
+materia.actions package
+=======================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   materia.actions.action
+   materia.actions.core
+   materia.actions.qchem
+
+Module contents
+---------------
+
+.. automodule:: materia.actions
+   :members:
+   :undoc-members:
+   :show-inheritance:

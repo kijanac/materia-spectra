@@ -1,0 +1,7 @@
+materia.engines.fragit module
+=============================
+
+.. automodule:: materia.engines.fragit
+   :members:
+   :undoc-members:
+   :show-inheritance:

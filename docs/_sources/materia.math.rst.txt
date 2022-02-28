@@ -1,0 +1,7 @@
+materia.math module
+===================
+
+.. automodule:: materia.math
+   :members:
+   :undoc-members:
+   :show-inheritance:

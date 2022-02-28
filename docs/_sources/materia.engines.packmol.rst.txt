@@ -1,0 +1,7 @@
+materia.engines.packmol module
+==============================
+
+.. automodule:: materia.engines.packmol
+   :members:
+   :undoc-members:
+   :show-inheritance:

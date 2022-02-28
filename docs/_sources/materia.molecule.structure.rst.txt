@@ -1,0 +1,7 @@
+materia.molecule.structure module
+=================================
+
+.. automodule:: materia.molecule.structure
+   :members:
+   :undoc-members:
+   :show-inheritance:

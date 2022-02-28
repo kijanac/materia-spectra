@@ -1,0 +1,7 @@
+materia.tasks module
+====================
+
+.. automodule:: materia.tasks
+   :members:
+   :undoc-members:
+   :show-inheritance:

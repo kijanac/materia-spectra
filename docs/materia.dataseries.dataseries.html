@@ -1,0 +1,490 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>materia.dataseries.dataseries module &mdash; materia 10.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="materia.engines package" href="materia.engines.html" />
+    <link rel="prev" title="materia.dataseries.data module" href="materia.dataseries.data.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> materia
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                10.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">materia</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="materia.html">materia package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="materia.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="materia.actions.html">materia.actions package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="materia.dataseries.html">materia.dataseries package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.engines.html">materia.engines package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.molecule.html">materia.molecule package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.symmetry.html">materia.symmetry package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="materia.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="materia.html#module-materia">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">materia</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">materia</a> &raquo;</li>
+        
+          <li><a href="materia.html">materia package</a> &raquo;</li>
+        
+          <li><a href="materia.dataseries.html">materia.dataseries package</a> &raquo;</li>
+        
+      <li>materia.dataseries.dataseries module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/materia.dataseries.dataseries.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-materia.dataseries.dataseries">
+<span id="materia-dataseries-dataseries-module"></span><h1>materia.dataseries.dataseries module<a class="headerlink" href="#module-materia.dataseries.dataseries" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.AbsorptionSpectrum">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">AbsorptionSpectrum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.AbsorptionSpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.Spectrum" title="materia.dataseries.dataseries.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.Spectrum</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.DataSeries">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">DataSeries</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.DataSeries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.DeltaSeries">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">DeltaSeries</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.DeltaSeries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.DeltaSeries.broaden">
+<code class="sig-name descname"><span class="pre">broaden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">peak_func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_eval</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.DeltaSeries.broaden" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.PhotopicResponse">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">PhotopicResponse</span></code><a class="headerlink" href="#materia.dataseries.dataseries.PhotopicResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.RelativeSPDSpectrum" title="materia.dataseries.dataseries.RelativeSPDSpectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.RelativeSPDSpectrum</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.PolarizabilitySpectrum">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">PolarizabilitySpectrum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.PolarizabilitySpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.Spectrum" title="materia.dataseries.dataseries.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.Spectrum</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.ReflectanceSpectrum">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ReflectanceSpectrum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.ReflectanceSpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.Spectrum" title="materia.dataseries.dataseries.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.Spectrum</span></code></a></p>
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.ReflectanceSpectrum.reflect_illuminant">
+<code class="sig-name descname"><span class="pre">reflect_illuminant</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">illuminant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.ReflectanceSpectrum.reflect_illuminant" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.RelativeSPDSpectrum">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">RelativeSPDSpectrum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalizing_x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">560</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_to</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.RelativeSPDSpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.SPDSpectrum" title="materia.dataseries.dataseries.SPDSpectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.SPDSpectrum</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.SPDSpectrum">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">SPDSpectrum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.Spectrum" title="materia.dataseries.dataseries.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.Spectrum</span></code></a></p>
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.CCT_DC">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">CCT_DC</span></code><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.CCT_DC" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<a class="reference internal" href="materia.quantity.html#materia.quantity.Quantity" title="materia.quantity.Quantity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.LMS">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">LMS</span></code><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.LMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.R_score">
+<code class="sig-name descname"><span class="pre">R_score</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_illuminant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference_illuminant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_reflectance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.R_score" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.UVW">
+<code class="sig-name descname"><span class="pre">UVW</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">white_point</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.UVW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.XYZ">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">XYZ</span></code><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.XYZ" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.cri">
+<code class="sig-name descname"><span class="pre">cri</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.cri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.uv">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">uv</span></code><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.uv" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.von_kries_UVW">
+<code class="sig-name descname"><span class="pre">von_kries_UVW</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_illuminant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_illuminant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">white_point</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.von_kries_UVW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.von_kries_XYZ">
+<code class="sig-name descname"><span class="pre">von_kries_XYZ</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_illuminant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_illuminant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.von_kries_XYZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.von_kries_uv">
+<code class="sig-name descname"><span class="pre">von_kries_uv</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_illuminant</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination_illuminant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.von_kries_uv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.SPDSpectrum.xy">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">xy</span></code><a class="headerlink" href="#materia.dataseries.dataseries.SPDSpectrum.xy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.Spectrum">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Spectrum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.Spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.DataSeries" title="materia.dataseries.dataseries.DataSeries"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.DataSeries</span></code></a></p>
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.Spectrum.extrapolate">
+<code class="sig-name descname"><span class="pre">extrapolate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_extrap_to</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.Spectrum.extrapolate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.Spectrum.interpolate">
+<code class="sig-name descname"><span class="pre">interpolate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_interp_to</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cubic_spline'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.Spectrum.interpolate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.Spectrum.match">
+<code class="sig-name descname"><span class="pre">match</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">match_to</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interp_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cubic_spline'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.Spectrum.match" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.TimeSeries">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">TimeSeries</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.TimeSeries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.DataSeries" title="materia.dataseries.dataseries.DataSeries"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.DataSeries</span></code></a></p>
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.TimeSeries.T">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">T</span></code><a class="headerlink" href="#materia.dataseries.dataseries.TimeSeries.T" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="materia.quantity.html#materia.quantity.Quantity" title="materia.quantity.Quantity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.TimeSeries.damp">
+<code class="sig-name descname"><span class="pre">damp</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.TimeSeries.damp" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.TimeSeries.dt">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">dt</span></code><a class="headerlink" href="#materia.dataseries.dataseries.TimeSeries.dt" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="materia.quantity.html#materia.quantity.Quantity" title="materia.quantity.Quantity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.TimeSeries.fourier_transform">
+<code class="sig-name descname"><span class="pre">fourier_transform</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pad_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.TimeSeries.fourier_transform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.dataseries.dataseries.TransmittanceSpectrum">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">TransmittanceSpectrum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.TransmittanceSpectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.dataseries.dataseries.Spectrum" title="materia.dataseries.dataseries.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.dataseries.dataseries.Spectrum</span></code></a></p>
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.TransmittanceSpectrum.avt">
+<code class="sig-name descname"><span class="pre">avt</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.TransmittanceSpectrum.avt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.dataseries.dataseries.TransmittanceSpectrum.transmit_illuminant">
+<code class="sig-name descname"><span class="pre">transmit_illuminant</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">illuminant</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.TransmittanceSpectrum.transmit_illuminant" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.dataseries.dataseries.broaden_gaussian">
+<code class="sig-name descname"><span class="pre">broaden_gaussian</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fwhm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.broaden_gaussian" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>[[<code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]]], <code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.dataseries.dataseries.broaden_lorentzian">
+<code class="sig-name descname"><span class="pre">broaden_lorentzian</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gamma</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.broaden_lorentzian" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="materia.dataseries.dataseries.hunt_pointer_estevez_transform">
+<code class="sig-name descname"><span class="pre">hunt_pointer_estevez_transform</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.hunt_pointer_estevez_transform" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.dataseries.dataseries.planckian_locus_ucs">
+<code class="sig-name descname"><span class="pre">planckian_locus_ucs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.planckian_locus_ucs" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>[[<a class="reference internal" href="materia.quantity.html#materia.quantity.Quantity" title="materia.quantity.Quantity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code></a>], <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.dataseries.dataseries.planckian_locus_xyz">
+<code class="sig-name descname"><span class="pre">planckian_locus_xyz</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.dataseries.dataseries.planckian_locus_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code>[[<a class="reference internal" href="materia.quantity.html#materia.quantity.Quantity" title="materia.quantity.Quantity"><code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code></a>], <code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="materia.engines.html" class="btn btn-neutral float-right" title="materia.engines package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="materia.dataseries.data.html" class="btn btn-neutral float-left" title="materia.dataseries.data module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

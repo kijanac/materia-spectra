@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>materia.math module &mdash; materia 10.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="materia.properties module" href="materia.properties.html" />
+    <link rel="prev" title="materia.handler module" href="materia.handler.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> materia
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                10.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">materia</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="materia.html">materia package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="materia.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="materia.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="materia.handler.html">materia.handler module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">materia.math module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.properties.html">materia.properties module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.quantity.html">materia.quantity module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.tasks.html">materia.tasks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.units.html">materia.units module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.utils.html">materia.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.workflow.html">materia.workflow module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="materia.html#module-materia">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">materia</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">materia</a> &raquo;</li>
+        
+          <li><a href="materia.html">materia package</a> &raquo;</li>
+        
+      <li>materia.math module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/materia.math.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-materia.math">
+<span id="materia-math-module"></span><h1>materia.math module<a class="headerlink" href="#module-materia.math" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="materia.math.divisors">
+<code class="sig-name descname"><span class="pre">divisors</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.divisors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all positive integer divisors of a given positive integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em>) – Number whose divisors are to be found.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of divisors of n.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.lcm">
+<code class="sig-name descname"><span class="pre">lcm</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numbers</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.lcm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find least common multiple of a list of integers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>numbers</strong> (<em>Iterable</em><em>[</em><em>int</em><em>]</em>) – Integers whose least common multiple is to be found</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Least common multiple</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.linearly_independent">
+<code class="sig-name descname"><span class="pre">linearly_independent</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vectors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.linearly_independent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select a linearly independent subset of vectors from the given set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vectors</strong> (<em>np.ndarray</em>) – (k,N) array of candidate vectors</p></li>
+<li><p><strong>indep</strong> (<em>Optional</em><em>[</em><em>np.ndarray</em><em>]</em><em>, </em><em>optional</em>) – (k,M) array of known linearly independent vectors, by default None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Linearly independent subset of vectors</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>np.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.nearest_points">
+<code class="sig-name descname"><span class="pre">nearest_points</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.nearest_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the nearest points from a given list of points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>numpy.ndarray</em>) – dxn array of n points in d-dimensional space.</p></li>
+<li><p><strong>m</strong> (<em>int</em>) – number of nearest points to find</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dxm array of the m nearest points from the given list of points.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.nontrivial_vector">
+<code class="sig-name descname"><span class="pre">nontrivial_vector</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">R</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.nontrivial_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a vector which is acted upon nontrivially
+(i.e. is sent to a linearly independent vector)
+by the given rotation matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>R</strong> (<em>numpy.ndarray</em>) – 3x3 numpy array representing a rotation matrix.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>3x1 numpy array representing a vector which is acted upon nontrivially by R.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.normalize">
+<code class="sig-name descname"><span class="pre">normalize</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize a vector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>v</strong> (<em>numpy.ndarray</em>) – 3x1 array to be normalized</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Normalized vector</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.orthogonal_decomp">
+<code class="sig-name descname"><span class="pre">orthogonal_decomp</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.orthogonal_decomp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decompose a vector into a projection and the orthogonal complement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v</strong> (<em>numpy.ndarray</em>) – 3x1 array to be decomposed</p></li>
+<li><p><strong>u</strong> (<em>numpy.ndarray</em>) – 3x1 array defining the subspace decomposition</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p><em>numpy.ndarray</em> – Projection of v along u</p></li>
+<li><p><em>numpy.ndarray</em> – Orthogonal complement of v relative to u</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.periodicity">
+<code class="sig-name descname"><span class="pre">periodicity</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.periodicity" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.perpendicular_vector">
+<code class="sig-name descname"><span class="pre">perpendicular_vector</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.perpendicular_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a unit vector which is perpendicular to
+one or two given nonzero vector(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>numpy.ndarray</em>) – 3x1 array representing a nonzero vector.</p></li>
+<li><p><strong>b</strong> (<em>numpy.ndarray</em>) – 3x1 array representing a nonzero vector.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>3x1 array representing a unit vector which
+is perpendicular to a (and b, if applicable).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.reflection_matrix">
+<code class="sig-name descname"><span class="pre">reflection_matrix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">normal</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.reflection_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a reflection matrix given a normal vector.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>normal</strong> (<em>numpy.ndarray</em>) – 3x1 array normal to the reflection plane</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>3x3 reflection matrix</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.rotation_matrix">
+<code class="sig-name descname"><span class="pre">rotation_matrix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">improper</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.rotation_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a rotation matrix given an axis and angle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>axis</strong> (<em>numpy.ndarray</em>) – 3x1 array whose direction is the axis of rotation.</p></li>
+<li><p><strong>theta</strong> (<em>float</em>) – Angle of rotation (in radians) about the axis of rotation.</p></li>
+<li><p><strong>m</strong> (<em>numpy.ndarray</em>) – 3x1 array representing the vector to be rotated.</p></li>
+<li><p><strong>n</strong> (<em>numpy.ndarray</em>) – 3x1 array representing the vector after rotation, i.e. the target vector.</p></li>
+<li><p><strong>improper</strong> (<em>bool</em>) – If true, return an improper rotation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>3x3 rotation matrix</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.sample_lune">
+<code class="sig-name descname"><span class="pre">sample_lune</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.sample_lune" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.sample_spherical_triangle">
+<code class="sig-name descname"><span class="pre">sample_spherical_triangle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_beta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sin_gamma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.sample_spherical_triangle" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.spherical_excess">
+<code class="sig-name descname"><span class="pre">spherical_excess</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cos_alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cos_beta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cos_gamma</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.spherical_excess" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.math.tetrahedron_volume">
+<code class="sig-name descname"><span class="pre">tetrahedron_volume</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.math.tetrahedron_volume" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate volume of a tetrahedron given its vertices.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>numpy.ndarray</em>) – 3x1 array of first vertex coordinates</p></li>
+<li><p><strong>b</strong> (<em>numpy.ndarray</em>) – 3x1 array of second vertex coordinates</p></li>
+<li><p><strong>c</strong> (<em>numpy.ndarray</em>) – 3x1 array of third vertex coordinates</p></li>
+<li><p><strong>d</strong> (<em>numpy.ndarray</em>) – 3x1 array of fourth vertex coordinates</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Volume of tetrahedron</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="materia.properties.html" class="btn btn-neutral float-right" title="materia.properties module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="materia.handler.html" class="btn btn-neutral float-left" title="materia.handler module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

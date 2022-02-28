@@ -1,0 +1,7 @@
+materia.engines.gpaw module
+===========================
+
+.. automodule:: materia.engines.gpaw
+   :members:
+   :undoc-members:
+   :show-inheritance:

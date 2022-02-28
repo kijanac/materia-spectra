@@ -1,0 +1,19 @@
+materia.dataseries package
+==========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   materia.dataseries.data
+   materia.dataseries.dataseries
+
+Module contents
+---------------
+
+.. automodule:: materia.dataseries
+   :members:
+   :undoc-members:
+   :show-inheritance:

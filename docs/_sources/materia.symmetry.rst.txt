@@ -1,0 +1,20 @@
+materia.symmetry package
+========================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   materia.symmetry.group_theory
+   materia.symmetry.symfinder
+   materia.symmetry.symmetry_operation
+
+Module contents
+---------------
+
+.. automodule:: materia.symmetry
+   :members:
+   :undoc-members:
+   :show-inheritance:

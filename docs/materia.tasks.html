@@ -1,0 +1,678 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>materia.tasks module &mdash; materia 10.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="materia.units module" href="materia.units.html" />
+    <link rel="prev" title="materia.quantity module" href="materia.quantity.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> materia
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                10.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">materia</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="materia.html">materia package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="materia.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="materia.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="materia.handler.html">materia.handler module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.math.html">materia.math module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.properties.html">materia.properties module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.quantity.html">materia.quantity module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">materia.tasks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.units.html">materia.units module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.utils.html">materia.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.workflow.html">materia.workflow module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="materia.html#module-materia">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">materia</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">materia</a> &raquo;</li>
+        
+          <li><a href="materia.html">materia package</a> &raquo;</li>
+        
+      <li>materia.tasks module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/materia.tasks.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-materia.tasks">
+<span id="materia-tasks-module"></span><h1>materia.tasks module<a class="headerlink" href="#module-materia.tasks" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="materia.tasks.ExternalTask">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ExternalTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">engine</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">io</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.ExternalTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.tasks.Task" title="materia.tasks.Task"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.tasks.Task</span></code></a></p>
+<p>Task which runs external code.</p>
+<dl class="py attribute">
+<dt id="materia.tasks.ExternalTask.engine">
+<code class="sig-name descname"><span class="pre">engine</span></code><a class="headerlink" href="#materia.tasks.ExternalTask.engine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Engine to run external code.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>materia.Engine</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.ExternalTask.io">
+<code class="sig-name descname"><span class="pre">io</span></code><a class="headerlink" href="#materia.tasks.ExternalTask.io" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manager for external code input and output files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>materia.IO</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.ExternalTask.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#materia.tasks.ExternalTask.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for use in Workflows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.ExternalTask.requirements">
+<code class="sig-name descname"><span class="pre">requirements</span></code><a class="headerlink" href="#materia.tasks.ExternalTask.requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of Tasks required as args in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.ExternalTask.named_requirements">
+<code class="sig-name descname"><span class="pre">named_requirements</span></code><a class="headerlink" href="#materia.tasks.ExternalTask.named_requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dicionary of Tasks required as kwargs in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Initialize Task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Name for use in Workflows, by default None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.tasks.FunctionTask">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">FunctionTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.FunctionTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.tasks.Task" title="materia.tasks.Task"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.tasks.Task</span></code></a></p>
+<p>Task which runs a Python function.</p>
+<dl class="py attribute">
+<dt id="materia.tasks.FunctionTask.f">
+<code class="sig-name descname"><span class="pre">f</span></code><a class="headerlink" href="#materia.tasks.FunctionTask.f" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to be run by compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>callable</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.FunctionTask.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#materia.tasks.FunctionTask.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for use in Workflows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.FunctionTask.requirements">
+<code class="sig-name descname"><span class="pre">requirements</span></code><a class="headerlink" href="#materia.tasks.FunctionTask.requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of Tasks required as args in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.FunctionTask.named_requirements">
+<code class="sig-name descname"><span class="pre">named_requirements</span></code><a class="headerlink" href="#materia.tasks.FunctionTask.named_requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dicionary of Tasks required as kwargs in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Initialize Task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Name for use in Workflows, by default None</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="materia.tasks.FunctionTask.compute">
+<code class="sig-name descname"><span class="pre">compute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.FunctionTask.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute Task using requirements as inputs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>[description]</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Any</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – [description]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.tasks.InputTask">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">InputTask</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.InputTask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.tasks.Task" title="materia.tasks.Task"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.tasks.Task</span></code></a></p>
+<p>Task which returns a fixed value.</p>
+<dl class="py attribute">
+<dt id="materia.tasks.InputTask.value">
+<code class="sig-name descname"><span class="pre">value</span></code><a class="headerlink" href="#materia.tasks.InputTask.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fixed value returned by compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.InputTask.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#materia.tasks.InputTask.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for use in Workflows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.InputTask.requirements">
+<code class="sig-name descname"><span class="pre">requirements</span></code><a class="headerlink" href="#materia.tasks.InputTask.requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of Tasks required as args in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.InputTask.named_requirements">
+<code class="sig-name descname"><span class="pre">named_requirements</span></code><a class="headerlink" href="#materia.tasks.InputTask.named_requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dicionary of Tasks required as kwargs in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Initialize Task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Name for use in Workflows, by default None</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="materia.tasks.InputTask.compute">
+<code class="sig-name descname"><span class="pre">compute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.InputTask.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute Task using requirements as inputs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>[description]</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Any</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – [description]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.tasks.MaxLIPOTR">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">MaxLIPOTR</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">objective_function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.MaxLIPOTR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.tasks.Task" title="materia.tasks.Task"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.tasks.Task</span></code></a></p>
+<p>Minimize objective function using MaxLIPOTR algorithm.</p>
+<dl class="py attribute">
+<dt id="materia.tasks.MaxLIPOTR.objective_function">
+<code class="sig-name descname"><span class="pre">objective_function</span></code><a class="headerlink" href="#materia.tasks.MaxLIPOTR.objective_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Objective function to be minimized.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.MaxLIPOTR.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#materia.tasks.MaxLIPOTR.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for use in Workflows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.MaxLIPOTR.requirements">
+<code class="sig-name descname"><span class="pre">requirements</span></code><a class="headerlink" href="#materia.tasks.MaxLIPOTR.requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of Tasks required as args in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.MaxLIPOTR.named_requirements">
+<code class="sig-name descname"><span class="pre">named_requirements</span></code><a class="headerlink" href="#materia.tasks.MaxLIPOTR.named_requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dicionary of Tasks required as kwargs in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Initialize Task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Name for use in Workflows, by default None</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="materia.tasks.MaxLIPOTR.compute">
+<code class="sig-name descname"><span class="pre">compute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_min</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_max</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_evals</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.MaxLIPOTR.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute Task using requirements as inputs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>[description]</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Any</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – [description]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.tasks.ShellCommand">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ShellCommand</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">command</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.ShellCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#materia.tasks.Task" title="materia.tasks.Task"><code class="xref py py-class docutils literal notranslate"><span class="pre">materia.tasks.Task</span></code></a></p>
+<p>Run shell command.</p>
+<dl class="py attribute">
+<dt id="materia.tasks.ShellCommand.command">
+<code class="sig-name descname"><span class="pre">command</span></code><a class="headerlink" href="#materia.tasks.ShellCommand.command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shell command</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.ShellCommand.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#materia.tasks.ShellCommand.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for use in Workflows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.ShellCommand.requirements">
+<code class="sig-name descname"><span class="pre">requirements</span></code><a class="headerlink" href="#materia.tasks.ShellCommand.requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of Tasks required as args in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.ShellCommand.named_requirements">
+<code class="sig-name descname"><span class="pre">named_requirements</span></code><a class="headerlink" href="#materia.tasks.ShellCommand.named_requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dicionary of Tasks required as kwargs in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Initialize Task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Name for use in Workflows, by default None</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="materia.tasks.ShellCommand.compute">
+<code class="sig-name descname"><span class="pre">compute</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.ShellCommand.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute Task using requirements as inputs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>[description]</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Any</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – [description]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.tasks.Task">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.Task" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Function with dependencies.</p>
+<dl class="py attribute">
+<dt id="materia.tasks.Task.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#materia.tasks.Task.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name for use in Workflows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.Task.requirements">
+<code class="sig-name descname"><span class="pre">requirements</span></code><a class="headerlink" href="#materia.tasks.Task.requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of Tasks required as args in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="materia.tasks.Task.named_requirements">
+<code class="sig-name descname"><span class="pre">named_requirements</span></code><a class="headerlink" href="#materia.tasks.Task.named_requirements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dicionary of Tasks required as kwargs in compute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Initialize Task.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Name for use in Workflows, by default None</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="materia.tasks.Task.compute">
+<code class="sig-name descname"><span class="pre">compute</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.Task.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute Task using requirements as inputs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>[description]</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Any</p>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – [description]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="materia.tasks.Task.requires">
+<code class="sig-name descname"><span class="pre">requires</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.Task.requires" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register Task dependencies.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="materia.tasks.task">
+<code class="sig-name descname"><span class="pre">task</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.tasks.task" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#materia.tasks.FunctionTask" title="materia.tasks.FunctionTask"><code class="xref py py-class docutils literal notranslate"><span class="pre">FunctionTask</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="materia.units.html" class="btn btn-neutral float-right" title="materia.units module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="materia.quantity.html" class="btn btn-neutral float-left" title="materia.quantity module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

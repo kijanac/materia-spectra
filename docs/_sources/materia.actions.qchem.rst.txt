@@ -1,0 +1,7 @@
+materia.actions.qchem module
+============================
+
+.. automodule:: materia.actions.qchem
+   :members:
+   :undoc-members:
+   :show-inheritance:

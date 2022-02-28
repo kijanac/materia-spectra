@@ -1,0 +1,7 @@
+materia.symmetry.group\_theory module
+=====================================
+
+.. automodule:: materia.symmetry.group_theory
+   :members:
+   :undoc-members:
+   :show-inheritance:

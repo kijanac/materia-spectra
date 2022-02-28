@@ -1,0 +1,7 @@
+materia.quantity module
+=======================
+
+.. automodule:: materia.quantity
+   :members:
+   :undoc-members:
+   :show-inheritance:

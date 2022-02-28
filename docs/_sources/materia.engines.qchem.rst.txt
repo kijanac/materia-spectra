@@ -1,0 +1,7 @@
+materia.engines.qchem module
+============================
+
+.. automodule:: materia.engines.qchem
+   :members:
+   :undoc-members:
+   :show-inheritance:

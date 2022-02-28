@@ -1,0 +1,7 @@
+materia.dataseries.data module
+==============================
+
+.. automodule:: materia.dataseries.data
+   :members:
+   :undoc-members:
+   :show-inheritance:

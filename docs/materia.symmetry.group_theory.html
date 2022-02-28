@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>materia.symmetry.group_theory module &mdash; materia 10.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="materia.symmetry.symfinder module" href="materia.symmetry.symfinder.html" />
+    <link rel="prev" title="materia.symmetry package" href="materia.symmetry.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> materia
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                10.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">materia</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="materia.html">materia package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="materia.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="materia.actions.html">materia.actions package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.dataseries.html">materia.dataseries package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.engines.html">materia.engines package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="materia.molecule.html">materia.molecule package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="materia.symmetry.html">materia.symmetry package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="materia.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="materia.html#module-materia">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">materia</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">materia</a> &raquo;</li>
+        
+          <li><a href="materia.html">materia package</a> &raquo;</li>
+        
+          <li><a href="materia.symmetry.html">materia.symmetry package</a> &raquo;</li>
+        
+      <li>materia.symmetry.group_theory module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/materia.symmetry.group_theory.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-materia.symmetry.group_theory">
+<span id="materia-symmetry-group-theory-module"></span><h1>materia.symmetry.group_theory module<a class="headerlink" href="#module-materia.symmetry.group_theory" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="materia.symmetry.group_theory.GroupElement">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">GroupElement</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.GroupElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupElement.conjugacy_class">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">conjugacy_class</span></code><a class="headerlink" href="#materia.symmetry.group_theory.GroupElement.conjugacy_class" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupElement.inverse">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">inverse</span></code><a class="headerlink" href="#materia.symmetry.group_theory.GroupElement.inverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupElement.is_conjugate_to">
+<code class="sig-name descname"><span class="pre">is_conjugate_to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.GroupElement.is_conjugate_to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupElement.regular_representation">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">regular_representation</span></code><a class="headerlink" href="#materia.symmetry.group_theory.GroupElement.regular_representation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.symmetry.group_theory.GroupRepresentation">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">GroupRepresentation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.GroupRepresentation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupRepresentation.H_function">
+<code class="sig-name descname"><span class="pre">H_function</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.GroupRepresentation.H_function" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupRepresentation.dimension">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">dimension</span></code><a class="headerlink" href="#materia.symmetry.group_theory.GroupRepresentation.dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupRepresentation.extract_blocks">
+<code class="sig-name descname"><span class="pre">extract_blocks</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">arrays</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.GroupRepresentation.extract_blocks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupRepresentation.is_irreducible">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">is_irreducible</span></code><a class="headerlink" href="#materia.symmetry.group_theory.GroupRepresentation.is_irreducible" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.GroupRepresentation.reduce">
+<code class="sig-name descname"><span class="pre">reduce</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.GroupRepresentation.reduce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="materia.symmetry.group_theory.PointGroup">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">PointGroup</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">products</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.binary_operation">
+<code class="sig-name descname"><span class="pre">binary_operation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.binary_operation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.cayley_table">
+<code class="sig-name descname"><span class="pre">cayley_table</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.cayley_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.conjugacy_classes">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">conjugacy_classes</span></code><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.conjugacy_classes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.conjugacy_representatives">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">conjugacy_representatives</span></code><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.conjugacy_representatives" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.get_element">
+<code class="sig-name descname"><span class="pre">get_element</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.get_element" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.identity">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">identity</span></code><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.identity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.inverse">
+<code class="sig-name descname"><span class="pre">inverse</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.inverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.irreps">
+<code class="sig-name descname"><span class="pre">irreps</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.irreps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.labels">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">labels</span></code><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.labels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.order">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">order</span></code><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="materia.symmetry.group_theory.PointGroup.regular_representation">
+<code class="sig-name descname"><span class="pre">regular_representation</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#materia.symmetry.group_theory.PointGroup.regular_representation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="materia.symmetry.symfinder.html" class="btn btn-neutral float-right" title="materia.symmetry.symfinder module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="materia.symmetry.html" class="btn btn-neutral float-left" title="materia.symmetry package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

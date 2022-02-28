@@ -1,0 +1,7 @@
+materia.symmetry.symmetry\_operation module
+===========================================
+
+.. automodule:: materia.symmetry.symmetry_operation
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,37 @@
+materia package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   materia.actions
+   materia.dataseries
+   materia.engines
+   materia.molecule
+   materia.symmetry
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   materia.handler
+   materia.math
+   materia.properties
+   materia.quantity
+   materia.tasks
+   materia.units
+   materia.utils
+   materia.workflow
+
+Module contents
+---------------
+
+.. automodule:: materia
+   :members:
+   :undoc-members:
+   :show-inheritance:

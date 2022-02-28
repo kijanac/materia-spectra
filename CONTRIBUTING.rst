@@ -1,0 +1,6 @@
+============
+Contributing
+============
+
+PRs are welcome :)
+

@@ -1,0 +1,7 @@
+materia.properties module
+=========================
+
+.. automodule:: materia.properties
+   :members:
+   :undoc-members:
+   :show-inheritance:

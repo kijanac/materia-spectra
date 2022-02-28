@@ -1,0 +1,7 @@
+materia.actions.action module
+=============================
+
+.. automodule:: materia.actions.action
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+materia.engines.vasp module
+===========================
+
+.. automodule:: materia.engines.vasp
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+materia.symmetry.symfinder module
+=================================
+
+.. automodule:: materia.symmetry.symfinder
+   :members:
+   :undoc-members:
+   :show-inheritance:

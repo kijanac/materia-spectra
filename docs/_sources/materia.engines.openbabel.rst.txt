@@ -1,0 +1,7 @@
+materia.engines.openbabel module
+================================
+
+.. automodule:: materia.engines.openbabel
+   :members:
+   :undoc-members:
+   :show-inheritance:

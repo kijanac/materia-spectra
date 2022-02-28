@@ -1,0 +1,44 @@
+name: Deploy
+
+on:
+  push:
+    tags:
+    - 'v*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/checkout@v2
+      with:
+        repository: kijanac/manage-py
+        path: manage
+
+    - name: Update conda
+      run: conda update -n base -c defaults conda
+
+    - name: Make conda environment and install dependencies
+      run: $(conda info --base)/bin/python3 manage/manage.py setup -n dev
+
+    - name: Install package (editable)
+      run: conda run -n dev python manage/manage.py install
+
+    - name: Lint code
+      run: conda run -n dev python manage/manage.py lint
+
+    - name: Run tests on editable install
+      run: conda run -n dev python manage/manage.py test
+
+    - uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        verbose: true
+
+    - name: Build sdist, wheel, and conda package
+      run: conda run -n dev python manage/manage.py build -c -l conda-forge
+
+    - name: Deploy to PyPI and Anaconda
+      run: conda run -n dev python manage/manage.py publish -p ${{ secrets.PYPI_TOKEN }} -c ${{ secrets.CONDA_TOKEN }}

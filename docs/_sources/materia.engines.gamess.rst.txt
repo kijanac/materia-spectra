@@ -1,0 +1,7 @@
+materia.engines.gamess module
+=============================
+
+.. automodule:: materia.engines.gamess
+   :members:
+   :undoc-members:
+   :show-inheritance:

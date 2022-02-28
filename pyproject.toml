@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "materia-spectra"
+version = "0.1.0"
+description = "Toolkit to analyze spectra."
+authors = ["Ki-Jana Carter <kijana@mit.edu>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/kijanac/materia-spectra"
+homepage = "https://github.com/kijanac/materia-spectra"
+packages = [
+    { include = "materia", from = "src" },
+]
+include = ["*.csv"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+numpy = "^1.21.1"
+scipy = "^1.7.3"
+matplotlib = "^3.5.1"
+unyt = "^2.8.0"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+flake8 = "^3.8.4"
+poetry2conda = "^0.3.0"
+"ruamel.yaml" = "^0.16.12"
+toml = "^0.10.2"
+pytest = "^6.1.2"
+pytest-cov = "^2.10.1"
+sphinx-rtd-theme = "^0.5.1"
+sphinx-autodoc-typehints = "^1.16.0"
+sphinx-jinja = "^1.4.0"
+
+[tool.poetry2conda]
+name = "materia-spectra"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

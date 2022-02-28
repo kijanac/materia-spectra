@@ -1,0 +1,28 @@
+materia.engines package
+=======================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   materia.engines.ccdc
+   materia.engines.engine
+   materia.engines.fragit
+   materia.engines.gamess
+   materia.engines.gpaw
+   materia.engines.multiwfn
+   materia.engines.openbabel
+   materia.engines.packmol
+   materia.engines.qchem
+   materia.engines.vasp
+   materia.engines.xtb
+
+Module contents
+---------------
+
+.. automodule:: materia.engines
+   :members:
+   :undoc-members:
+   :show-inheritance:

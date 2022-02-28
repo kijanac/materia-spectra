@@ -1,0 +1,7 @@
+materia.engines.xtb module
+==========================
+
+.. automodule:: materia.engines.xtb
+   :members:
+   :undoc-members:
+   :show-inheritance:

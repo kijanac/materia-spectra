@@ -1,0 +1,7 @@
+materia.handler module
+======================
+
+.. automodule:: materia.handler
+   :members:
+   :undoc-members:
+   :show-inheritance:

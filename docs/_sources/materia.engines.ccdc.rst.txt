@@ -1,0 +1,7 @@
+materia.engines.ccdc module
+===========================
+
+.. automodule:: materia.engines.ccdc
+   :members:
+   :undoc-members:
+   :show-inheritance:
