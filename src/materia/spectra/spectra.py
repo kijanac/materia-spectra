@@ -326,9 +326,7 @@ class ASTMG173(Spectrum):
     """ASTM G-173-03 solar spectral irradiance."""
 
     def __init__(self) -> None:
-        with importlib.resources.path(
-            "materia.spectra.data", "ASTMG173.csv"
-        ) as datafile:
+        with importlib.resources.path("materia.spectra", "ASTMG173.csv") as datafile:
             x, y = np.loadtxt(datafile, skiprows=2, usecols=[0, 2], delimiter=",").T
 
         x *= unyt.nm
@@ -341,9 +339,7 @@ class CIE_CMF_X(Spectrum):
     """CIE color matching function for X tristimulus value."""
 
     def __init__(self):
-        with importlib.resources.path(
-            "materia.spectra.data", "CIE_CMF_X.csv"
-        ) as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_CMF_X.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -356,9 +352,7 @@ class CIE_CMF_Y(Spectrum):
     """CIE color matching function for Y tristimulus value."""
 
     def __init__(self):
-        with importlib.resources.path(
-            "materia.spectra.data", "CIE_CMF_Y.csv"
-        ) as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_CMF_Y.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -371,9 +365,7 @@ class CIE_CMF_Z(Spectrum):
     """CIE color matching function for Z tristimulus value."""
 
     def __init__(self):
-        with importlib.resources.path(
-            "materia.spectra.data", "CIE_CMF_Z.csv"
-        ) as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_CMF_Z.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -386,7 +378,7 @@ class CIE_A(Spectrum):
     """CIE A illuminant."""
 
     def __init__(self) -> None:
-        with importlib.resources.path("materia.spectra.data", "CIE_A.csv") as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_A.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -443,9 +435,7 @@ class CIE_D65(Spectrum):
     """CIE D65 illuminant."""
 
     def __init__(self) -> None:
-        with importlib.resources.path(
-            "materia.spectra.data", "CIE_D65.csv"
-        ) as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_D65.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -464,7 +454,7 @@ class CIE_F(Spectrum):
     """
 
     def __init__(self, n: int) -> None:
-        with importlib.resources.path("materia.spectra.data", "CIE_F.csv") as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_F.csv") as datafile:
             x, y = np.loadtxt(datafile, usecols=[0, n], delimiter=",").T
 
         x *= unyt.nm
@@ -478,7 +468,7 @@ CIE_PHOTOPIC = CIE_CMF_Y
 
 class CIE_S0(Spectrum):
     def __init__(self):
-        with importlib.resources.path("materia.spectra.data", "CIE_S0.csv") as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_S0.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -489,7 +479,7 @@ class CIE_S0(Spectrum):
 
 class CIE_S1(Spectrum):
     def __init__(self):
-        with importlib.resources.path("materia.spectra.data", "CIE_S0.csv") as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_S0.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -500,7 +490,7 @@ class CIE_S1(Spectrum):
 
 class CIE_S2(Spectrum):
     def __init__(self):
-        with importlib.resources.path("materia.spectra.data", "CIE_S0.csv") as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_S0.csv") as datafile:
             x, y = np.loadtxt(datafile, delimiter=",").T
 
         x *= unyt.nm
@@ -511,9 +501,7 @@ class CIE_S2(Spectrum):
 
 class CIE_TCS(Spectrum):
     def __init__(self, n: int) -> None:
-        with importlib.resources.path(
-            "materia.spectra.data", "CIE_TCS.csv"
-        ) as datafile:
+        with importlib.resources.path("materia.spectra", "CIE_TCS.csv") as datafile:
             x, y = np.loadtxt(datafile, skiprows=3, usecols=[0, n], delimiter=",").T
 
         x *= unyt.nm
