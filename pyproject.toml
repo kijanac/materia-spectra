@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "materia-spectra"
-version = "1.0.0"
+version = "1.0.1"
 description = "Toolkit to analyze spectra."
 authors = ["Ki-Jana Carter <kijana@mit.edu>"]
 license = "MIT"
