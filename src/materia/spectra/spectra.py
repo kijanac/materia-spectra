@@ -234,6 +234,175 @@ class Spectrum:
         return Spectrum(self.x, self.y / other)
 
 
+class MultiSpectrum(Spectrum):
+    def __init__(
+        self, x: unyt.unyt_array, y: unyt.unyt_array, **interp_kwargs: Any
+    ) -> None:
+        inds = x.argsort()
+        self.x = x[inds]
+        self.y = unyt.unyt_array(y)[:, inds]
+
+        if "ext" not in interp_kwargs:
+            interp_kwargs["ext"] = 1
+
+        self.interp_kwargs = interp_kwargs
+
+    @property
+    def interp(self) -> tuple[scipy.interpolate.UnivariateSpline]:
+        """tuple[scipy.interpolate.UnivariateSpline] : Interpolated spectra."""
+        return tuple(
+            scipy.interpolate.InterpolatedUnivariateSpline(
+                self.x.value, y, **self.interp_kwargs
+            )
+            for y in self.y.value
+        )
+
+    def __call__(self, x: Union[unyt.unyt_array, np.ndarray]) -> unyt.unyt_array:
+        """Evaluate spectra via interpolation.
+
+        Parameters
+        ----------
+        x : Union[unyt.unyt_array, numpy.ndarray]
+            Input points.
+
+        Returns
+        -------
+        unyt.unyt_array
+            Spectrum values.
+        """
+        tck, u = scipy.interpolate.splprep(self.y.value, u=self.x.value, s=0)
+        if isinstance(x, unyt.unyt_array):
+            return scipy.interpolate.splev(x.to(self.x.units).value, tck) * self.y.units
+
+        return (
+            scipy.interpolate.splev(x, tck, ext=self.interp_kwargs["ext"])
+            * self.y.units
+        )
+
+    def integrate(
+        self,
+        xmin: Optional[unyt.unyt_quantity] = None,
+        xmax: Optional[unyt.unyt_quantity] = None,
+    ) -> unyt.unyt_quantity:
+        """Integrate spectra.
+
+        Parameters
+        ----------
+        xmin : unyt.unyt_quantity, optional
+            Lower integration limit.
+            By default None.
+        xmax : unyt.unyt_quantity, optional
+            Upper integration limit.
+            By default None.
+
+        Returns
+        -------
+        unyt.unyt_quantity
+            Integral of spectra.
+        """
+        if xmin is None:
+            xmin = self.x.min()
+        else:
+            xmin = xmin.to(self.x.units)
+
+        if xmax is None:
+            xmax = self.x.max()
+        else:
+            xmax = xmax.to(self.x.units)
+
+        tck, u = scipy.interpolate.splprep(self.y.value, u=self.x.value, s=0)
+        return (
+            scipy.interpolate.splint(xmin.value, xmax.value, tck)
+            * self.x.units
+            * self.y.units
+        )
+
+    def convert(
+        self, unit: unyt.Unit, jacobian: Optional[bool] = True
+    ) -> MultiSpectrum:
+        """Change variable of x-axis and apply appropriate Jacobian transformation.
+
+        Parameters
+        ----------
+        unit : unyt.Unit
+            New x-axis unit.
+        jacobian : bool, optional
+            If True, apply Jacobian to ordinate.
+            By default True.
+
+        Returns
+        -------
+        MultiSpectrum
+            Converted spectra.
+        """
+        x = self.x.to_equivalent(unit, "spectral")
+        if jacobian:
+            y = self.y * (self.x / x)
+        else:
+            y = self.y
+
+        return MultiSpectrum(x, y)
+
+    def plot(
+        self, x: Optional[unyt.unyt_array] = None, title: Optional[str] = None
+    ) -> None:
+        """Plot spectra.
+
+        Parameters
+        ----------
+        x : unyt.unyt_array, optional
+            Plot range.
+            By default None.
+        title : str, optional
+            Plot title.
+            By default None.
+        """
+        if x is None:
+            for y in self.y.value:
+                plt.plot(self.x.value, y)
+        else:
+            for y in self(x):
+                plt.plot(x, y)
+
+        plt.xlabel(f"Units: {self.x.units}")
+        plt.ylabel(f"Units: {self.y.units}")
+        if title is not None:
+            plt.title(title)
+        plt.show()
+
+    def color(self, illuminant: Optional[Spectrum] = None) -> tuple[Color]:
+        """Color objects for these spectra.
+
+        Parameters
+        ----------
+        illuminant : Spectrum, optional
+            Illuminant spectrum.
+            By default None.
+
+        Returns
+        -------
+        tuple[Color]
+            Color objects for these spectra.
+        """
+        return tuple(Color(Spectrum(self.x, y), illuminant=illuminant) for y in self.y)
+
+    def __mul__(self, other) -> MultiSpectrum:
+        if isinstance(other, Spectrum):
+            x = np.union1d(self.x, other.x) * (self.x.units)
+            y = self(x) * other(x)
+            return MultiSpectrum(x, y)
+
+        return MultiSpectrum(self.x, self.y * other)
+
+    def __truediv__(self, other) -> MultiSpectrum:
+        if isinstance(other, Spectrum):
+            x = np.union1d(self.x, other.x) * (self.x.units)
+            y = self(x) / other(x)
+            return MultiSpectrum(x, y)
+
+        return MultiSpectrum(self.x, self.y / other)
+
+
 class StickSpectrum(Spectrum):
     """Spectrum consisting of one or more delta functions."""
 
