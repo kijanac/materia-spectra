@@ -94,7 +94,7 @@ class Spectrum:
 
     @property
     def interp(self) -> scipy.interpolate.UnivariateSpline:
-        """scipy.interpolate.UnivariateSpline : Interpolate spectrum."""
+        """scipy.interpolate.UnivariateSpline : Interpolated spectrum."""
         return scipy.interpolate.InterpolatedUnivariateSpline(
             self.x.value, self.y.value, **self.interp_kwargs
         )
@@ -201,7 +201,7 @@ class Spectrum:
             plt.title(title)
         plt.show()
 
-    def color(self, illuminant: Optional[Spectrum]) -> Color:
+    def color(self, illuminant: Optional[Spectrum] = None) -> Color:
         """Color object for this spectrum.
 
         Parameters
