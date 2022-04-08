@@ -67,7 +67,8 @@ def gaussian(
     Union[unyt.unyt_quantity, unyt.unyt_array],
 ]:
     def f(x):
-        return np.exp(-(((x - mean) / std) ** 2)) / np.sqrt(np.pi) / std
+        z = (x - mean) / std
+        return np.exp(-0.5 * (z ** 2)) / np.sqrt(2 * np.pi) / std
 
     return f
 
