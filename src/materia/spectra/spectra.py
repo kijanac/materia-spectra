@@ -26,6 +26,7 @@ __all__ = [
     "CIE_S2",
     "CIE_TCS",
     "Color",
+    "MultiSpectrum",
     "Spectrum",
     "StickSpectrum",
 ]
